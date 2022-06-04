@@ -1,0 +1,57 @@
+﻿<!doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Formulario Web </title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+<form name="contacto" netlify>
+    <div class="form-box">
+    	<h1> Formulario de Registro</h1>
+    	
+        <div class="input-box">
+    		<i class="fa-solid fa-person"></i>
+    		<input type="text" placeholder="Nombre Completo" id="Nombre Completo">
+    	</div>
+    	<div class="input-box">
+    		<i class="fa fa-envelope-o"></i>
+    		<input type="email" placeholder="Correo" id="correo">
+    	</div>
+    	<div class="input-box">
+    		<i class="fa fa-key"></i>
+    		<input type="password" placeholder="Contraseña" id="myInput">
+<span class="eye" onclick="myFunction()">
+    		<i id="hide1" class="fa fa-eye"></i>
+    		<i id="hide2" class="fa fa-eye-slash"></i>
+    		</span>
+    		
+    	</div>
+<script>
+    		function myFunction(){
+    			var a = document.getElementById("myInput");
+    			var b = document.getElementById("hide1");
+    			var c = document.getElementById("hide2");
+
+    			if (a.type ==='password') {
+    				a.type = "text";
+    				b.style.display = "block";
+    				c.style.display = "none";
+    			}
+    			else{
+    				a.type = "password";
+    				b.style.display = "none";
+    				c.style.display = "block";
+
+    			}
+    		}
+    	</script>
+       <input type="submit" value="Enviar" />
+    </div>
+    	</form>
+    	</form>
+	</body>
+	</html>
